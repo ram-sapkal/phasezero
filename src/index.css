@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .tooltip::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -40%;
+    left: 50%;
+    background-color: black;
+    rotate: 45deg;   
+} */
+
+.tooltip::before{
+    content: '';
+    z-index: -10;
+    position: absolute;
+    top: -6px;
+    left: 18%;
+    border: 7px solid transparent;
+    border-radius: 2px;
+    background-color: rgba(216, 255, 105, 1);
+    rotate: 45deg;
+}
